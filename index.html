@@ -9,11 +9,13 @@
   </head>
 
   <body>
+    <!-- Redirect root to Developer_Portfolio -->
+    <script>
+      if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+        window.location.href = "/Developer_Portfolio/";
+      }
+    </script>
+
     <div id="root"></div>
-
-
   </body>
 </html>
-
-
-
