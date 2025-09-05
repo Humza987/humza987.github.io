@@ -12,7 +12,7 @@ Featured projects include:
 - Soon Developing Data Pipelining Projects with Azure and AWS to expand skills.
 
 ## Technologies
-- **Frontend:** React.js, Next.js, TailwindCSS
+- **Frontend:** React.js, Next.js, TailwindCSS, Angular
 - **Backend / Serverless:** Supabase Edge Functions, LocalStack, AWS Lambda
 - **Databases:** PostgreSQL, MySQL, MongoDB
 - **Tools:** Docker, Git/GitHub, CI/CD
