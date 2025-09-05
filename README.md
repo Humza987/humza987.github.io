@@ -12,7 +12,7 @@ Featured projects include:
 - **Frontend:** React.js, Next.js, TailwindCSS, Angular
 - **Backend / Serverless:** Supabase Edge Functions, LocalStack, AWS Lambda
 - **Databases:** PostgreSQL, MySQL, MongoDB
-- **Tools:** Docker, Git/GitHub, CI/CD
+- **Tools:** Docker, Git/GitHub, CI/CD 
 
 ## Contact
 - Email: humzainam@gmail.com  
