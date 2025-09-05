@@ -5,11 +5,11 @@ const portfolioImages = {
   profile:
     "https://api.builder.io/api/v1/image/assets/TEMP/0468b51298414b9c6fb21cc6fe3218a379d0e5fa?width=920",
   project1:
-    "/Developer_Portfolio/assets/SafeScript-Logo.jpg",
+    "/assets/SafeScript-Logo.jpg",
   project2:
-    "/Developer_Portfolio/assets/Blog_pic.jpg",
+    "/assets/Blog_pic.jpg",
   project3:
-    "/Developer_Portfolio/assets/Portfolio_Pic.jpg",
+    "/assets/Portfolio_Pic.jpg",
   project4:
     "https://api.builder.io/api/v1/image/assets/TEMP/59e42bb15b97198af3623297b09c14aa0283e0cd?width=1126",
   // Technology icons - Add new ones here
@@ -76,11 +76,11 @@ const technologies = [
 const experiences = [
   {
     id: 1,
-    title: "Digital Transformation Project Manager",
+    title: "Digital Transformation Lead",
     company: "Airbond Travel",
     period: "Jun 2025 - Present",
     location: "Toronto, ON",
-    logo: "/Developer_Portfolio/assets/airbond-logo.jpg",
+    logo: "/assets/airbond-logo.jpg",
     description:
     "Guided the company president on technology decisions and led the modernization of the website with AI-powered trip planning and a booking engine. Coordinated payment integrations, streamlined workflows with Power Automate, and created an IT training handbook. Prepared marketing initiatives and delivered general IT support to ensure smooth adoption of new systems.",
     skills: [
@@ -97,7 +97,7 @@ const experiences = [
     company: "SOTI",
     period: "Sep 2023 - Aug 2024",
     location: "Toronto, ON",
-    logo: "/Developer_Portfolio/assets/SOTI-Logo.png",
+    logo: "/assets/SOTI-Logo.png",
     description:
       "Resolved over 130 issues including unit tests and bugs, significantly improving frontend user experience. Increased software module coverage from 5% to 80% through comprehensive unit testing with Karma and Jasmine. Contributed to backend upgrades and security vulnerability resolution.",
     skills: ["Angular", "C#", ".NET", "MySQL", "Jasmine", "Karma"],
@@ -108,7 +108,7 @@ const experiences = [
     company: "k2i academy",
     period: "May 2022 - Aug 2022",
     location: "Toronto, ON",
-    logo: "/Developer_Portfolio/assets/Lassonde-Logo.jpg",
+    logo: "/assets/Lassonde-Logo.jpg",
     description:
       "Mentored 8 Grade 11 physics students in creating research posters on A.I. and data using Micro-bit. Taught students basic Machine Learning to analyze weather graphs and identify natural disasters through DIY weather stations.",
     skills: ["Machine Learning", "Micro-bit", "STEM Education", "Physics"],
@@ -119,7 +119,7 @@ const experiences = [
     company: "Lassonde Blockchain Association",
     period: "Sep 2023 - Jan 2024",
     location: "Toronto, ON",
-    logo: "/Developer_Portfolio/assets/LBA-Logo.jpg",
+    logo: "/assets/LBA-Logo.jpg",
     description:
       "Developed minimalist landing page and new blog submission feature following Figma design constraints. Built modern web applications using Next.js and React with responsive design principles.",
     skills: ["Next.js", "React", "Tailwind", "Figma"],
@@ -130,7 +130,7 @@ const experiences = [
     company: "YuHacks 2023",
     period: "June 2023 - Aug 2023",
     location: "Toronto, ON",
-    logo: "/Developer_Portfolio/assets/yuHacks-logo.jpg",
+    logo: "/assets/yuHacks-logo.jpg",
     description:
       "Assembled modern landing page and developed custom JWT login/registration with error handling. Implemented GraphQL mutations to post data to backend for hacker form applications.",
     skills: ["Next.js", "React", "TypeScript", "GraphQL", "JWT"],
@@ -749,12 +749,12 @@ export default function Index() {
         {/* Logos Below "Who Am I?" */}
         <div className="flex justify-center items-center gap-6 mt-4 animate-fade-in">
           <img
-            src="/Developer_Portfolio/assets/SOTI-Logo.png"
+            src="/assets/SOTI-Logo.png"
             alt="SOTI Logo"
             className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain"
             />
           <img
-            src="/Developer_Portfolio/assets/Lassonde-Logo.jpg"
+            src="/assets/Lassonde-Logo.jpg"
             alt="Lassonde Logo"
             className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain"
             />
