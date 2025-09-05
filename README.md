@@ -2,9 +2,6 @@
 
 Welcome to my personal developer portfolio. This site showcases my projects, technical skills, and contact information.
 
-## About Me
-I am a full-stack developer with experience in **serverless architectures, AI integrations, and modern web development**. My focus is on building **interactive, production-ready web applications**.
-
 ## Projects
 Featured projects include:
 - **Mindryx** – AI-generated quiz platform using Next.js, Supabase, and WebLLM.
