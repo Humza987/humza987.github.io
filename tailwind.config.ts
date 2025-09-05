@@ -2,7 +2,13 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./client/**/*.{ts,tsx}"],
+  // broaden content paths so Tailwind sees all class names
+  content: [
+    "./index.html",
+    "./client/**/*.{js,ts,jsx,tsx,html}",
+    "./shared/**/*.{js,ts,jsx,tsx,html}",
+    "./public/**/*.html"
+  ],
   prefix: "",
   theme: {
     container: {
@@ -76,20 +82,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -98,5 +96,27 @@ export default {
       },
     },
   },
+
+  // safety net for classes generated at runtime or otherwise hard-to-find in static analysis
+  safelist: [
+    // animation/visibility translations used by your components
+    "opacity-0",
+    "opacity-100",
+    "translate-y-10",
+    "translate-y-0",
+    "scale-105",
+    "animate-fade-in",
+    "animate-fade-in-delay",
+    "animate-slide-up",
+    "animate-width-expand",
+    "animate-float",
+    "animate-bounce-subtle",
+    // explicit portfolio color classes
+    { pattern: /^bg-portfolio/ },
+    { pattern: /^text-portfolio/ },
+    { pattern: /^hover:bg-portfolio/ },
+    { pattern: /^lg:/ }, // keep responsive prefixed classes if used dynamically
+  ],
+
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
